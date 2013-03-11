@@ -227,6 +227,11 @@
       letter-spacing: -1px;
     }
 
+    .slide .logo {
+      margin: 1em 0 0 0;
+      width: 50%;
+    }
+
     .slide h1 {
       display: block;
 
