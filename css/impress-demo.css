@@ -299,47 +299,16 @@ h1{
     font-weight:700;
     font-size:30px;
 }
-/*
-    And now we start to style each step separately.
-
-    I agree that this may be not the most efficient, object-oriented and
-    scalable way of styling, but most of steps have quite a custom look
-    and typography tricks here and there, so they had to be styled separately.
-
-    First is the title step with a big <h1> (no room for padding) and some
-    3D positioning along Z axis.
-    */
-
-    #title {
-      padding: 0;
-    }
-
-    #title .try {
-      font-size: 64px;
-      position: absolute;
-      top: -0.5em;
-      left: 1.5em;
-
-      -webkit-transform: translateZ(20px);
-      -moz-transform:    translateZ(20px);
-      -ms-transform:     translateZ(20px);
-      -o-transform:      translateZ(20px);
-      transform:         translateZ(20px);
-    }
-
+#title {
+  margin-top: 30%;
+}
     #title h1 {
-      font-size: 190px;
-
-      -webkit-transform: translateZ(50px);
-      -moz-transform:    translateZ(50px);
-      -ms-transform:     translateZ(50px);
-      -o-transform:      translateZ(50px);
-      transform:         translateZ(50px);
+      height: 90px;
+      font-size: 90px;
+      color: black;
+      line-height: 1em;
     }
 
-    #title .footnote {
-      font-size: 32px;
-    }
 
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
