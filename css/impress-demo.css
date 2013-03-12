@@ -276,6 +276,7 @@
 
       .slide ul li {
         list-style: square outside;
+        line-height: 1.5em;
       }
 
  ul .outer{
