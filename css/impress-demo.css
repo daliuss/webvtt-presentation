@@ -287,50 +287,61 @@
       font-family: monospace;
       font-size: 22px;
       margin: 0 auto;
-      width: 500px;
       line-height: 1.1em;
+    }
+
+    .slide .structure {
+      width: 500px;
+    }
+
+    .slide .stylized {
+      width: 560px;
     }
 
     .slide .webvtt .outline {
       border: 2px solid;
       position: relative;
+      display: inline;
     }
 
     .slide .webvtt .outline span {
       font-family: 'PT Sans', sans-serif;
-      font-size: smaller;
+      font-size: 16px;
       position: absolute;
       top: -25px;
       right: 10px;
+      padding: 0 10px;
+      color: white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
     }
-
 
     .slide .webvtt .green {
       border-color: #009933;
     }
     .slide .webvtt .outline .green {
-      color: #009933;
+      background-color: #009933;
     }
 
     .slide .webvtt .red {
       border-color: #990000;
     }
     .slide .webvtt .outline .red {
-      color: #990000;
+      background-color: #990000;
     }
 
     .slide .webvtt .blue {
       border-color: #000099;
     }
     .slide .webvtt .outline .blue {
-      color: #000099;
+      background-color: #000099;
     }
 
     .slide .webvtt .purple {
       border-color: #660099;
     }
     .slide .webvtt .outline .purple {
-      color: #660099;
+      background-color: #660099;
     }
 
 q{
