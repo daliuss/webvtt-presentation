@@ -301,7 +301,6 @@
     .slide .webvtt .outline {
       border: 2px solid;
       position: relative;
-      display: inline;
     }
 
     .slide .webvtt .outline span {
