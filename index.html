@@ -4,11 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushXml.js"></script>
+
     <title>WebVTT Demo</title>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/shCoreDefault.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.defaults['smart-tabs'] = false;
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.all();
+    </script>
 
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -248,18 +261,38 @@
         <!-- Slide -->
         <div class="step slide" data-x="14000" data-y="-1500">
             <div class="header">
-                <q>Track element in JavaScript</q>
-                <span class="sub-header">DOM API provides facilities to manipulate Information from Track Element</span>
+                <q>Javascript and the DOM</q>
+                <span class="sub-header">Extending the DOM to implement WebVTT</span>
             </div>
-            <h1>WebIDL Objects:</h1>  <br />
+            <h1>DOM Objects</h1>
             <ul>
-                <li><b>TrackElement:</b> allows authors to specify explicit external timed text tracks for media elements</li>
-                <li><b>TextTrack:</b></li>
-                <li><b>TextTrackCue: is the unit of time-sensitive data in a text track </b></li>
+                <li><b>&lt;track&gt;</b> allows authors to specify external timed text tracks for media elements</li>
+                <li><b>TextTrack</b> represnts a single text track in the DOM</li>
+                <li><b>TextTrackList</b> contains a list of TextTracks attached to a media element</li>
+                <li><b>TextTrackCue</b> represnts a single timed cue within a TextTrack</li>
+                <li><b>TextTrackCueList</b> contains a list of TextTrackCues within a TextTrack</li>
             </ul>
         </div>
         <!-- Slide -->
         <div class="step slide" data-x="15000" data-y="-1500">
+            <div class="header">
+                <q>Javascript and the DOM</q>
+            </div>
+            <h1>Sample Track</h1>
+            <div class="code">
+                <pre class="brush: xml;">
+                    &lt;video src="media/demo.webm" controls preload="auto"&gt;
+                        &lt;track kind="subtitles"
+                               src="captions/demo.vtt" 
+                               label="ptsubs" 
+                               srclang"pt-BR" default /&gt;
+                    &lt;/video&gt;
+                </pre>
+            </div>
+            <p>Do some stuff here regarding getting cues + adding/removing cues</p>
+        </div>
+        <!-- Slide -->
+        <div class="step slide" data-x="16000" data-y="-1500">
             <div class="header">
                 <q>Implementation</q>
             </div>
@@ -270,7 +303,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="16000" data-y="-1500">
+        <div class="step slide" data-x="17000" data-y="-1500">
             <div class="header">
                 <q>Design</q>
             </div>
@@ -280,7 +313,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="17000" data-y="-1500">
+        <div class="step slide" data-x="18000" data-y="-1500">
             <div class="header">
                 <q>Open-Source Development</q>
                 <span class="sub-header">The tools and technologies</span>
@@ -290,7 +323,7 @@
             </div>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="18000" data-y="-1500">
+        <div class="step slide" data-x="19000" data-y="-1500">
             <div class="header">
                 <q>Open-Source Development</q>
                 <span class="sub-header">The challenges and hurdles</span>
@@ -302,7 +335,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="19000" data-y="-1500">
+        <div class="step slide" data-x="20000" data-y="-1500">
             <div class="header">
                 <q>WebVTT in the Future</q><br>
                 <h1>Firefox Implementation:</h1>  <br />
@@ -322,7 +355,7 @@
             </div>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="20000" data-y="-1500">
+        <div class="step slide" data-x="21000" data-y="-1500">
             <div class="header">
                 <q>Concluding Statements: WebVTT</q>
             </div>
@@ -337,7 +370,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="21000" data-y="-1500">
+        <div class="step slide" data-x="22000" data-y="-1500">
             <div class="header">
                 <q>Special Thanks</q>
             </div>
@@ -361,7 +394,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="22000" data-y="-1500">
+        <div class="step slide" data-x="23000" data-y="-1500">
             <div class="header">
                 <q>The End</q>
             </div>

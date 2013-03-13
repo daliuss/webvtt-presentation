@@ -286,6 +286,12 @@
  ul .outer{
    list-style:none;
   }
+    .slide .code {
+      width: 550px;
+      margin: 0 auto;
+      font-size: 20px;
+      font-family: Helvetica;
+    }
 
     .slide .webvtt {
       display: block;
