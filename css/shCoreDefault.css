@@ -79,6 +79,7 @@
   padding: .5em 0 0.5em 1em !important;
 }
 .syntaxhighlighter table td.code {
+  padding-bottom: 5px !important;
   width: 100% !important;
 }
 .syntaxhighlighter table td.code .container {
