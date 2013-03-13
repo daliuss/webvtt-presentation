@@ -7,6 +7,7 @@
 
     <script type="text/javascript" src="js/shCore.js"></script>
     <script type="text/javascript" src="js/shBrushXml.js"></script>
+    <script type="text/javascript" src="js/shBrushJScript.js"></script>
 
     <title>WebVTT Demo</title>
 
@@ -291,17 +292,35 @@
                     &lt;/video&gt;
                 </pre>
             </div>
-            <h1>DOM API</h1>
+        </div>
+        <!-- Slide -->
+        <div class="step slide" data-x="16000" data-y="-1500">
+            <div class="header">
+                <q>Javascript and the DOM</q>
+            </div>
+            <h2>Getting a track element</h2>
             <div class="code">
-                <pre class="brush: xml;">
-                    var textTrack = document.getElementById("demotrack");
+                <pre class="brush: js;">
+                    var trackElement = document.getElementById("demotrack");
+                </pre>
+            </div>
+            <h2>Creating a TextTrackCue</h2>
+            <div class="code">
+                <pre class="brush: js;">
                     var ttc = new TextTrackCue(1, 3, "What is it like to be Brazilian?");
+                </pre>
+            </div>
+            <h2>Adding/Removing a TextTrackCue</h2>
+            <div class="code">
+                <pre class="brush: js;">
+                    var textTrack = trackElement.track;
                     textTrack.addCue(ttc);
+                    textTrack.removeCue(ttc);
                 </pre>
             </div>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="16000" data-y="-1500">
+        <div class="step slide" data-x="17000" data-y="-1500">
             <div class="header">
                 <q>Implementation</q>
             </div>
@@ -313,7 +332,7 @@
             <img src="images/repoRalph.jpg" alt="Old Repo" style="width: 90%" />
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="17000" data-y="-1500">
+        <div class="step slide" data-x="18000" data-y="-1500">
             <div class="header">
                 <q>Design</q>
             </div>
@@ -323,7 +342,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="18000" data-y="-1500">
+        <div class="step slide" data-x="19000" data-y="-1500">
             <div class="header">
                 <q>Open-Source Development</q>
                 <span class="sub-header">The tools and technologies</span>
@@ -333,7 +352,7 @@
             </div>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="19000" data-y="-1500">
+        <div class="step slide" data-x="20000" data-y="-1500">
             <div class="header">
                 <q>Open-Source Development</q>
                 <span class="sub-header">The challenges and hurdles</span>
@@ -346,7 +365,7 @@
             <img src="images/noIdea.jpg" alt="No Idea!!" style="display: block; margin-left: auto; margin-right: auto;" />
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="20000" data-y="-1500">
+        <div class="step slide" data-x="21000" data-y="-1500">
             <div class="header">
                 <q>WebVTT in the Future</q><br>
                 <h1>Firefox Implementation:</h1>  <br />
@@ -368,7 +387,7 @@
             <img src="images/assistive2.jpg" alt="Visual Impaired" style="width: 20%; heigth: 20%; display: block; margin-left: 670px; margin-top: 310px;" />
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="21000" data-y="-1500">
+        <div class="step slide" data-x="22000" data-y="-1500">
             <div class="header">
                 <q>Concluding Statements: WebVTT</q>
             </div>
@@ -383,7 +402,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="22000" data-y="-1500">
+        <div class="step slide" data-x="23000" data-y="-1500">
             <div class="header">
                 <q>Special Thanks</q>
             </div>
@@ -407,7 +426,7 @@
             </ul>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="23000" data-y="-1500">
+        <div class="step slide" data-x="24000" data-y="-1500">
             <div class="header">
                 <q>The End</q>
             </div>
