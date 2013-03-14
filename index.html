@@ -29,6 +29,7 @@
 </head>
 
 <body class="impress-not-supported">
+    <img id="cache1" src="" alt="" style="width: 90%" style="display:none"/>
 
     <div class="fallback-message">
         <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
@@ -321,15 +322,26 @@
             </div>
         </div>
         <!-- Slide -->
-        <div class="step slide" data-x="17000" data-y="-1500">
+        <div id="developmentdiv" class="step slide" data-x="17000" data-y="-1500">
             <div class="header">
                 <q>Implementation</q>
                 <span class="sub-header">Behind the chrome-plated exterior</span>
             </div>
              <div class="center">
-                <img src="images/development.gif" alt="Old Repo" style="width: 90%" />
+                <!--img src="images/development.gif" alt="Old Repo" style="width: 90%" /-->
+                <img id="developmentgif"  alt="Old Repo" style="display:none; width: 90%;"/>
+
             </div>
         </div>
+        <!-- Step listener for above slide -->
+        <script type="text/javascript">
+          var d = document.getElementById('developmentdiv');
+          d.addEventListener('impress:stepenter',function() {
+            var gif = document.getElementById('developmentgif');
+            gif.style.display="block";
+            gif.src = "images/development.gif";
+          });
+        </script>
         <!-- Slide -->
         <div class="step slide" data-x="18000" data-y="-1500">
             <div class="header">
